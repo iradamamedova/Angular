@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=1, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="reset.css" />
+        <link rel="stylesheet" href="style.css" />
+        <script src="https://kit.fontawesome.com/30908b1d2e.js" crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <header>
+            <div id="mask">
+                <div id="header1">
+                    <div class="container">
+                        <div>
+                            <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                            <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                            <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://www.youtube.com/" target="_blank"><i class="fab fa-youtube"></i></a>
+                        </div>
+                        <div id="signin">
+                            <i class="fas fa-key"></i><span>Sign in</span>
+                            <i class="fas fa-id-card"></i><span>Register</span>
+                        </div>
+                    </div>
+            </div>
+                <div id="header2">
+                    <div class="container">
+                        <div><img src="img/logo.png" alt="Fitness logo" /></div>
+                        <nav>
+                            <button id="hamburger">&#9776;</button>
+                            <ul id="menu">
+                                <li><a href="index.htm">home</a></li>
+                                <li><a href="about.htm" target="_blank">about us</a></li>
+                                <li><a href="successstory.htm" target="_blank">success story</a></li>
+                                <li><a href="shop.htm" target="_blank">shop</a></li>
+                                <li><a href="contact.htm" target="_blank">contact</a></li>
+                            </ul>
+                        </nav>
+                        <div><div id="search"><i class="fas fa-search"></i><span>Search</span></div></div>
+                    </div>
+                </div>
+                <div id="header3">
+                    <h1>Online Personal Training</h1>
+                    <p>Maximum Results in Minimum Time, no matter your location</p>
+                    <a href="#section4">Select your plan</a>
+                </div>
+            </div>
+        </header>
+        <main>
+            <section id="section1">
+                <div id="serv">
+                    <div id="serv1" class="services">
+                        <div id="s1"></div>
+                        <p>Real results</p>
+                        <div class="redbar"></div>
+                    </div>
+                    <div id="serv2" class="services">
+                        <div id="s2"></div>
+                        <p>Best service</p>
+                        <div class="redbar"></div>
+                    </div>
+                    <div id="serv3" class="services">
+                        <div id="s3"></div>
+                        <p>Price options</p>
+                        <div class="redbar"></div>
+                    </div>
+                    <div id="serv4" class="services">
+                        <div id="s4"></div>
+                        <p>Special Offer</p>
+                        <div class="redbar"></div>
+                    </div>
+                </div>
+                <dev id="sc2">
+                    <div id="sc2a">
+                        <p>
+                            <span id="sc2a-1">Call now for a</span>
+                            <span id="sc2a-2">FREE</span>
+                            <span id="sc2a-3">one-on-one consultation!</span>
+                        </p>
+                        <img src="img/sc2a.png" />
+                    </div>
+                    <div id="sc2b">
+                        <p>
+                            <span id="sc2b-1">Fitness</span> <span id="sc2b-1-2">Trainer</span><br /><br />
+                            <span id="sc2b-2">For more information on fitness programs call or text us at </span><span style="color:#222; line-height: 1.6; font-size: 1em;">568-898-8977</span><br /><br />
+                            <span id="sc2b-3">In Your Home Or at THE GYM!</span>
+                        </p>
+                        <img src="img/sc2b.png" />
+                    </div>
+                </dev>
+            </section>
+            <section id="section2">
+                <div id="section2-container">
+                    <h2>Find your ideal weight</h2>
+                    <div id="fmbuttons">
+                        <button onclick="perfectweightF()">For female</button>                                    
+                        <button onclick="perfectweightM()">For male</button>
+                    </div>
+                    <div id="converter">
+                        <span>Your height, cm:</span>
+                        <input id="inputHeight" type="text" placeholder="Input Height" />
+                        <span id="perfectWeight"></span><span>kq</span>
+                    </div>
+                </div>
+            </section>
+            <section id="section3">
+                <div class="container">
+                    <h3>our team</h3>
+                    <h2>Meet <span style="font-weight: bold;">our expert</span></h2>
+                    <div id="section3-container">
+                        <div id="trainer1">
+                            <div id="tr1hov">
+                                <h4>Michael Smith</h4>
+                                <p>Fitness Instructor</p>
+                                <ul id="tr1ul">
+                                    <li><i class="fab fa-facebook-f"></i></li>
+                                    <li><i class="fab fa-twitter"></i></li>
+                                    <li><i class="fab fa-google-plus-g"></i></li>
+                                    <li><i class="fab fa-linkedin-in"></i></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div id="trainer2">
+                            <div id="tr2hov">
+                                <h4>Robert Jackson</h4>
+                                <p>Fitness Instructor</p>
+                                <ul id="tr2ul">
+                                    <li><i class="fab fa-facebook-f"></i></li>
+                                    <li><i class="fab fa-twitter"></i></li>
+                                    <li><i class="fab fa-google-plus-g"></i></li>
+                                    <li><i class="fab fa-linkedin-in"></i></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div id="trainer3">
+                            <div id="tr3hov">
+                                <h4>Maria Martinez</h4>
+                                <p>Fitness Instructor</p>
+                                <ul id="tr3ul">
+                                    <li><i class="fab fa-facebook-f"></i></li>
+                                    <li><i class="fab fa-twitter"></i></li>
+                                    <li><i class="fab fa-google-plus-g"></i></li>
+                                    <li><i class="fab fa-linkedin-in"></i></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div id="trainer4">
+                            <div id="tr4hov">
+                                <h4>James Johnson</h4>
+                                <p>Fitness Instructor</p>
+                                <ul id="tr4ul">
+                                    <li><i class="fab fa-facebook-f"></i></li>
+                                    <li><i class="fab fa-twitter"></i></li>
+                                    <li><i class="fab fa-google-plus-g"></i></li>
+                                    <li><i class="fab fa-linkedin-in"></i></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="section4">
+                <div class="container">
+                    <h3>our plan</h3>
+                    <h2>Best <span style="font-weight: bold;">price options</span></h2>
+                    <div id="section4-container">
+                        <div>
+                            <div>
+                                <h4><span>£</span>349</h4>
+                                <h5>1 Month TRIAL</h5>
+                                <div class="redbar"></div>
+                            </div>
+                            <p>£499 for 3 months thereafter and recurring</p>
+                            <p><i class="far fa-calendar-check"></i><span>4+2</span><span>TRAINING PLANS</span></p>
+                            <p><i class="far fa-file-video"></i><span>80</span><span>HOW TO <br /> VIDEOS</span></p>
+                            <p><i class="far fa-newspaper"></i><span>27</span><span>KNOWLEDGE  <br />ARTICLES</span></p>
+                            <p><i class="far fa-user"></i><span>INTERACT<br /> CERTIFIED<br /> TRAINERS</span></p>
+                            <button> BUY NOW</button>
+                            <p>1-month pre-pay plan</p>
+                        </div>
+                        <div>
+                            <div>
+                                <h4><span>£</span>599</h4>
+                                <h5>3 Month TRIAL</h5>
+                                <div class="redbar"></div>
+                            </div>    
+                            <p>£499 for 3 months thereafter and recurring</p>
+                            <p><i class="far fa-calendar-check"></i><span>4+2</span><span>TRAINING PLANS</span></p>
+                            <p><i class="far fa-file-video"></i><span>80</span><span>HOW TO  <br />VIDEOS</span></p>
+                            <p><i class="far fa-newspaper"></i><span>27</span><span>KNOWLEDGE  <br />ARTICLES</span></p>
+                            <p><i class="far fa-user"></i><span>INTERACT <br />CERTIFIED <br />TRAINERS</span></p>
+                            <button> BUY NOW</button>
+                            <p>1-month pre-pay plan</p>
+                        </div>
+                        <div>
+                            <div>
+                                <h4><span>£</span>999</h4>
+                                <h5>6 Month TRIAL</h5>
+                                <div class="redbar"></div>
+                            </div>
+                            <p>£499 for 3 months thereafter and recurring</p>
+                            <p><i class="far fa-calendar-check"></i><span>4+2</span><span>TRAINING PLANS</span></p>
+                            <p><i class="far fa-file-video"></i><span>80</span><span>HOW TO  <br /> VIDEOS</span></p>
+                            <p><i class="far fa-newspaper"></i><span>27</span><span>KNOWLEDGE  <br />ARTICLES</span></p>
+                            <p><i class="far fa-user"></i><span>INTERACT <br />CERTIFIED <br />TRAINERS</span></p>
+                            <button> BUY NOW</button>
+                            <p>1-month pre-pay plan</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="section5">
+                <div id="darkmask">
+                    <div class="container">
+                        <h2>Our Client <span>success stories</span></h2>
+                        <h3>What others think of our service</h3>
+                        <div>
+                            <div class="comments" id="comment1"></div>
+                            <div class="comment-border"></div>
+                            <h2>Oliver Cleveland</h2>
+                            <p>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec</p>
+                            <h3>Read more</h3>
+                        </div>
+                        <div>
+                            <div class="comments" id="comment2"></div>
+                            <div class="comment-border"></div>
+                            <h2>Johan Smith</h2>
+                            <p>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec</p>
+                            <h3>Read more</h3>
+                        </div>
+                        <div>
+                            <div class="comments" id="comment3"></div>
+                            <div class="comment-border"></div>
+                            <h2>Daven Lorner</h2>
+                            <p>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec</p>
+                            <h3>Read more</h3>
+                        </div>
+                    </div>
+                </div>    
+            </section>
+            <section id="section6">
+                <h2>Our <span>shop</span></h2>
+                <div class="container">
+                    <div id="man-shop">
+                        <div>
+                            <button><a href="shop.htm" target="_blank">Goods for Men</a></button>
+                        </div>
+                    </div>
+                    <div id="woman-shop">
+                        <div>
+                            <button><a href="shop.htm" target="_blank">Goods for Women</a></button>
+                        </div>    
+                    </div>
+                </div>
+            </section>
+            <section id="section7">
+                <div id="lightmask">
+                    <div class="container">
+                        <div>
+                            <h3>JOIN OUR NEWSLETTER</h3>
+                            <h2>subscribe <span>newsletter</span></h2>
+                        </div>
+                        <div>
+                            <input type="text" placeholder="enter your email adress" />
+                        </div>
+                        <div>
+                            <button>subscribe <span></span>&#10142;</span> </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="container">
+                <div>
+                    <h3>Fitness <span>Trainer</span></h3>
+                    <h4>best fitness club</h4>
+                    <div class="redbar"></div>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos earum repellendus error, veritatis ad minima, aspernatur neque quasi voluptatibus doloribus odit itaque laborum dolore veniam.
+                    </p>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> <span>100 highland ave, california,</span> united state</li>
+                        <li><i class="fas fa-envelope-square"></i> contact@fitness.com</li>
+                        <li><i class="fas fa-phone-square"></i> +994 55 999 99 99</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Fitness information</h3>
+                    <div class="redbar"></div>
+                    <ul>
+                        <li><a href="about.htm" target="_blank"><i class="fas fa-arrow-circle-right"></i>about us</a></li>
+                        <li><a href="successstory.htm" target="_blank"><i class="fas fa-arrow-circle-right"></i>success story</a></li>
+                        <li><a href="shop.htm" target="_blank"><i class="fas fa-arrow-circle-right"></i>our shop</a></li>
+                        <li><a href="contact.htm" target="_blank"><i class="fas fa-arrow-circle-right"></i>contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <a id="button">&#710;</a>
+            <p>© 2017 fintness made by Youwes, All right reserved</p>
+        </footer>
+    </body>
+</html>

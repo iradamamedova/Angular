@@ -1,0 +1,457 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&family=Open+Sans:wght@300;400;500&display=swap');
+button {text-transform: uppercase; color: #fff; padding: 15px 20px; background: #f13b3e; border: none; border-radius: 30px;}
+body {user-select: none;}
+header {
+    background: url("img/header.jpg") no-repeat fixed center / cover; 
+    height: 95vh; position: relative; width: 100%; font: .7em 'Montserrat';
+}
+#mask {height: 95vh; width: 100%; background-color:#25252570;}
+#header1 {width: 100%; height: 40px; padding: 5px; background: #222;}
+#header1 div div {display: inline-block;}
+#mask i {margin:5px 10px; font-size: 1.2em; color: #666;}
+#header1 div span {margin: 5px; color: #fff;}
+#header1 #signin {float: right;}
+#header1 i:hover {color: #f13b3e; transform: .3s;}
+#header2 {
+    background: #111111f5 none repeat scroll 0 0; width: 100%; padding: 10px; 
+    position: absolute; z-index: 999; color: #fff; text-transform: uppercase;
+}
+#header2 div {display: flex; align-items: center;}
+#header2 li {display: inline-block; margin:0 15px;}
+#header2 img {display: none;} 
+#header3 {
+    color: #fff; position: absolute; width: 100%; bottom: 50%; 
+    text-align: center; right: 50%; transform: translate(50%,50%);
+}
+#header3 h1 {font: bold 1.8em 'Montserrat'; margin: 20px;}
+#header3 a {
+    position: absolute; top: 120px; right: 50%; transform: translate(50%, 0); width: 200px; text-transform: uppercase; 
+    color: #fff; padding: 15px 20px; background: #f13b3e; border: none; border-radius: 30px;
+}
+#hamburger {background: none; overflow: hidden; font-size: 2em; text-align: left; margin:0; padding: 0;}
+#search {position: absolute; right: 10px;}
+#menu li {padding: 10px; margin:5px 10px;}
+#menu a {color: #fff;}
+#menu a:hover {color: #f13b3e; transition: .3s;}
+.fixedtop {
+    animation: fadeInDown 0.8s ease-in-out;
+    box-shadow: 0 0 10px #333;
+    width: 100%;
+    padding-top: 20px;
+    position: fixed !important;
+    right: 0; top: 0; z-index: 999;
+}
+@keyframes fadeInDown {
+    0% {opacity: 0; transform: translate(0, -100%);}
+    100% {opacity: 1; transform: none;}
+}
+#section1 {width: 100%; padding: 20px; background: #f5f5f5; position: relative;}
+#serv { 
+    background: #fff;
+    font-family: 'Open Sans';
+    color: #444;
+    width: 80%;
+    height: 25vh;
+    position: absolute; 
+    top: -10vh; right: 50%; transform: translate(50%,0); z-index: 99;
+    display: none;
+    justify-content: space-between;
+    box-shadow: 5px 10px 15px #16161636;
+}
+.services {width: 20%; margin: 0 10px; text-align: center; position: relative; transition: all .3s linear;}
+.services>.redbar {position: absolute; bottom: 0; right: 50%; transform: translate(50%,0);}
+.redbar {width: 30px; height: 3px; background: #f13b3e;}
+.services:hover {
+    background: #f13b3e;
+    color: #fff;
+    width: 25%;
+    height: 110%;
+    margin: -1%;
+    border-radius: 10px;
+}
+#serv1:hover > #s1 {
+    width: 100px;
+    height: 100px;
+    bottom: 90%;
+    right: 43%;
+    border: 20px solid #f13b3e;
+    box-shadow: 0 0 5px #44444425;
+} 
+#serv2:hover > #s2 {
+    width: 100px;
+    height: 100px;
+    bottom: 90%;
+    right: 43%;
+    border: 20px solid #f13b3e;
+    box-shadow: 0 0 5px #44444425;
+} 
+#serv3:hover > #s3 {
+    width: 100px;
+    height: 100px;
+    bottom: 90%;
+    right: 43%;
+    border: 20px solid #f13b3e;
+    box-shadow: 0 0 5px #44444425;
+} 
+#serv4:hover > #s4 {
+    width: 100px;
+    height: 100px;
+    bottom: 90%;
+    right: 43%;
+    border: 20px solid #f13b3e;
+    box-shadow: 0 0 5px #44444425;
+} 
+.services p {width: 80%; position: absolute; right: 50%; bottom: 30%; transform: translate(50%, 50%);}
+#s1 {background: url('img/service1.png') center/cover; width: 90px; height: 90px; border: 20px solid #fff; margin: 20px;
+    position: absolute; right: 40%; bottom: 60%; transform: translate(50%, 50%); border-radius: 50%; transition: all .3s linear;}
+#s2 {background: url('img/service2.png') center/cover; width: 90px; height: 90px; border: 20px solid #fff; margin: 20px;
+    position: absolute; right: 40%; bottom: 60%; transform: translate(50%, 50%); border-radius: 50%; transition: all .3s linear;}
+#s3 {background: url('img/service3.png') center/cover; width: 90px; height: 90px; border: 20px solid #fff; margin: 20px;
+    position: absolute; right: 40%; bottom: 60%; transform: translate(50%, 50%); border-radius: 50%; transition: all .3s linear;}
+#s4 {background: url('img/service4.png') center/cover; width: 90px; height: 90px; border: 20px solid #fff; margin: 20px;
+    position: absolute; right: 40%; bottom: 60%; transform: translate(50%, 50%); border-radius: 50%; transition: all .3s linear;}
+#sc2 div {
+    width: 90%; box-shadow: 5px 10px 15px #16161636;
+    margin: 20px; background: #fff; padding: 30px; font-family: "Montserrat"; font-weight: bold; position: relative;
+}
+#sc2a img {display: none; height: 100%; margin: right; position: absolute; right: 0; bottom: 0;}
+#sc2a p {display: inline-block; width: 60%;}
+#sc2a p span {display: block;}
+#sc2b img {display: none; height: 100%; position: absolute; right: 0; bottom: 0;}
+#sc2a-1, #sc2b-1 {color: #666; font-size: 1.5em;}
+#sc2a-2 {color: #f13b3e; font-size: 3em;}
+#sc2a-3 {color: #222; font-size: 1.5em;}
+#sc2b-1-2 {color: #f13b3e; font-size: 1.5em;}
+#sc2b-2 {color: #666; line-height: .6;}
+#sc2b-3 {color: #f13b3e; font-size: 1.5em; display: block;}
+#section2 {
+    background: url('img/converter.jpg') no-repeat fixed left top/cover;
+    position: relative; height: 90vh; width: 100%; font-family: 'Montserrat'; text-align: center;
+    color:#fff;
+}
+#section2 h2 {font-size: 2em;}
+#section2 button {cursor: pointer; border-radius: 0; margin: 20px -5px}
+#fmbuttons :last-child {border-left: 1px solid #fff;}
+#converter {width: 100%; font-weight: bold; background: #f13b3e; padding: 30px; margin: auto;}
+#converter input {padding: 10px; font-size: 1em; border: none; margin: 10px; outline: none;}
+#section2-container { padding: 20px; width: 100%; position: absolute; right: 50%; bottom: 50%; transform: translate(50%, 50%);}
+#section3, #section4 {padding: 20px; font-family: 'Montserrat'; text-align: center; color: #555; background: #f4f4f4; width: 100%;}
+#section3 h3, #section4 h3 { text-transform: uppercase; font-size: .8em; letter-spacing: 5px; font-weight: bolder; }
+#section3 h2, #section4 h2 { margin: 20px; font-size: 2em; }
+#section3-container>div {
+    position: relative; overflow: hidden; 
+    color: #fff; margin: 50px 10px; 
+    width: 200px; height: 50vh; 
+    display: inline-block; 
+}
+#section3-container>div>div {background: #80808059; display: none; width: 200px; height: 50vh; position: relative;}
+#trainer1:hover > #tr1hov {display: block;}
+#trainer2:hover > #tr2hov {display: block;}
+#trainer3:hover > #tr3hov {display: block;}
+#trainer4:hover > #tr4hov {display: block;}
+#section3-container>div>div ul {
+    display: flex; justify-content: space-evenly; align-items: center; 
+    width: 100%; height: 50px; background: #f13b3e; 
+    padding: 30px; position: absolute; bottom: 0; 
+    transform: translateY(100%); }
+#section3-container>div>div ul i {font-size: .8em; cursor: pointer;}
+#trainer1 :hover > #tr1ul{transform: translateY(0); transition: transform .2s linear;}
+#trainer2 :hover > #tr2ul{transform: translateY(0); transition: transform .2s linear;}
+#trainer3 :hover > #tr3ul{transform: translateY(0); transition: transform .2s linear;}
+#trainer4 :hover > #tr4ul{transform: translateY(0); transition: transform .2s linear;}
+#section3-container>div h4 {font-size: 1.5em; width: 100%; position: absolute; bottom: 45%; right: 50%; transform: translate(50%,50%);}
+#section3-container>div p {font-size: .8em;  position: absolute; bottom: 35%; right: 50%; transform: translate(50%,50%)}
+#section3-container>div li {margin: 0 10px;}
+#trainer1 {background: url('img/trainer1.jpg') center/cover;}
+#trainer2 {background: url('img/trainer2.jpg') center/cover;}
+#trainer3 {background: url('img/trainer3.jpg') center/cover;}
+#trainer4 {background: url('img/trainer4.jpg') center/cover;}
+
+#section4-container>div {width: 90%; color:#303030; box-shadow: 0 0 5px #ddd; background: #fff; margin: 20px;}
+#section4-container>div :last-child {font-size: .8em;}
+#section4-container>div>div {background: #f7f7f7; margin-bottom: 15px; padding: 30px 20px 0 20px;}
+#section4-container>div .redbar {margin: auto;}
+#section4-container>div h4 {font-size: 2.3em; font-weight: bold;}
+#section4-container>div h4 span {font-size: .5em; font-weight: bold; margin: 10px;}
+#section4-container>div h5 {margin: 20px;}
+#section4-container>div p {padding: 10px 50px; font-family: 'Open Sans';}
+#section4-container>div p :last-child {font-size: .6em; padding: 5px 10px;}
+#section4-container>div p span {display: block; line-height: 12px; text-align: left;}
+#section4-container>div p i {float: left; color: #666; font-size: 1.2em; margin: 10px;}
+#section5 {
+    width: 100%; background: url('img/successstories.jpg') no-repeat fixed center/cover;
+    text-align: center; color: #fff;
+}
+#darkmask {width: 100%; position: relative; background: #0e0e0ee8; padding: 20px;}
+#section5 .container >h2 {font: 2em 'Montserrat'; margin: 20px;}
+#section5 .container >h2 span {font-weight: bold;}
+#section5 .container >h3 {font: bold .8em 'Open Sans'; letter-spacing: 4px;}
+#section5 .container>div {
+    font-family: 'Open Sans';
+    position: relative; display: inline-block; 
+    border-radius: 10px; 
+    margin: 100px 10px; 
+    padding: 50px 20px 10px 20px;
+    color:#333; background: #fff;
+}
+#section5 .container>div h2 , h3 {font-size: 1.2em; margin: 20px;}
+#section5 .container>div h3 {color:#f13b3e}
+#section5 .container>div h2 {color: #666}
+#section5 .container>div p {line-height: 20px;}
+#comment1 {background: url('img/comment1.jpg') top/cover;}
+#comment2 {background: url('img/comment2.jpg') top/cover;}
+#comment3 {background: url('img/comment3.jpg') top/cover;}
+.comments {
+    width: 80px; height: 80px; 
+    border-radius: 50%; 
+    position: absolute; 
+    top: -40px; right: 50%; transform: translate(50%,0);
+    z-index: 99;
+}
+.comment-border {
+    width: 160px; height: 80px;
+    border-top-left-radius: 170px;
+    border-top-right-radius: 170px;
+    border: 20px solid #02020250;
+    border-bottom: 0;
+    position: absolute; 
+    top: -80px; right: 50%; transform: translate(50%,0); 
+    background: #555555a9;
+}
+
+
+#section6 {width: 100%; padding: 50px 0; background: #f4f4f4; font-family: 'Montserrat'; color:#333;}
+#section6 span {font-weight: bolder;}
+#section6 h2 {text-align: center; font-size: 2em; margin: 30px;}
+#section6 a {color: #333;}
+#section6 .container #man-shop, #section6 .container #woman-shop {width: 100%; height: 70vh; margin: 30px 0; box-shadow: 5px 10px 15px #16161636; position: relative;}
+#section6 .container #man-shop div, #section6 .container #woman-shop div {width: 90%; position: absolute; bottom: 0; right: 50%; transform: translate(50%,0);}
+#man-shop {background: url('img/man-shop.jpg') top/cover;}
+#woman-shop {background: url('img/woman-shop.jpg') top/cover;}
+#section6 div button {text-transform: capitalize; font-size: 1em; background: #f7f7f7; width: 100%; color:#333; border-radius: 0; display: block; margin: 20px 0;}
+
+#section7 {
+    width: 100%; background: url('img/successstories.jpg') no-repeat fixed center/cover;
+    text-align: center; font-family: 'Montserrat'; color: #444;
+}
+#lightmask {width: 100%; padding: 50px; background: #e4e4e4fb;}
+#section7 #lightmask .container {text-align: left;}
+#section7 #lightmask .container div h2 {font-size: 2em; margin: 0 15px; }
+#section7 #lightmask .container div h2 span {font-weight: bold;}
+#section7 #lightmask .container div h3 {font-family: 'Open Sans'; font-size: .8em; letter-spacing: 2px; }
+#section7 input {
+    width: 100%; 
+    letter-spacing: 1px; 
+    border: none; border-radius: 30px; 
+    outline: none; padding: 20px 30px; 
+    color: #999; margin: 20px;
+}
+#section7 button {padding: 15px 30px; letter-spacing: 1px; text-transform: lowercase; font-size: 1em;}
+
+footer {background: #cecece; font-family: "Open Sans"; color: #333;}
+footer .container {padding:20px;}
+footer .container div {width: 90%;}
+footer .container div h3 span {color: #f13b3e;}
+footer .container div h3 {letter-spacing: 1px; font: 1.4em 'Montserrat';}
+footer .container div h4 {text-transform: uppercase; font-size: .8em; letter-spacing: 2px;}
+footer .container div p {margin: 20px 0; font-size: .9em; line-height: 20px;}
+footer .container div li {margin: 10px 0; font-size: .9em; }
+footer .container div li span {color: #000}
+footer .container div li i {margin: 0 5px; color: #999;}
+footer .container .redbar {width: 40px; margin: 10px 0;}
+footer>p {text-align: center; padding: 50px 0 0 0; font-size: .8em;}
+footer a {color: #666;}
+
+#button {   
+   font-size: 2.5em;
+   text-align: center;
+   display: block;
+   margin: auto;
+   background: #3333331f;   
+   width: 30px;   
+   height: 30px;  
+   border-radius: 15px;  
+   transition: background-color .3s;
+} 
+#button:hover {cursor: pointer;background-color: #333;} 
+#button:active {background-color: #555;} 
+
+
+
+
+
+/* About Us */
+
+.navigation { 
+    background: #fff;
+    font-family: 'Open Sans';
+    color: #999;
+    width: 80%;
+    height: 14vh;
+    padding: 35px;
+    position: absolute; 
+    top: -7vh; right: 50%; transform: translate(50%,0); z-index: 99;
+    box-shadow: 0 0 15px #cacaca86;
+}
+.navigation span {font-weight: bold;}
+.navigation i {margin: 0 5px;}
+.navigation p {display: inline; margin: 0 10px; font-size: .8em;}
+.navigation p i {font-size: .7em;}
+#section1-about {width: 100%; background: url('img/worldmap.png') no-repeat fixed center/cover; font-family: 'Open Sans';}
+#lightmask-about {width: 100%; background: #f1f1f1ea; position: relative;}
+#lightmask-about .container {padding: 30px;}
+#about-fitnesstrainer h1 {font-size: 1.2em; font-weight: bold; font-family: 'Montserrat', sans-serif;}
+#about-fitnesstrainer p {color: #666; line-height: 25px; margin: 0 0 100px 0;}
+#about-fitnesstrainer {padding: 100px 0 0 0;}
+#about-fitnesstrainer .redbar {margin: 10px 0 20px 0;}
+#about-facts {position: relative; width: 100%; margin: auto;}
+#about-facts #about-facts-1 {
+    position: absolute; z-index: 99; 
+    right: 50%; top: -40px; transform: translate(50%, 0); 
+    width: 80px; height: 80px; background: #f13b3e; 
+    border-radius: 50%;
+}
+#about-facts #about-facts-3 {width: 100%; height: 50vh; background: url('img/about.jpg') center/cover;}
+#about-facts #about-facts-2 {width: 100%; background: #333; font-family: 'Montserrat'; color: #fff; padding: 50px;}
+#about-facts #about-facts-2 h2 {font-size: 2em; margin: 0 0 50px 0;}
+#about-facts #about-facts-2 h4 {font-size: 1.5em; margin: 60px 0 20px 0;}
+#about-facts .comment-border {top: -80px; background: #f13b3e2d; border-color: #fafafa4f;}
+.clearfix::after {content: ""; clear: both; display: table;}
+#about-photos-section {background: #f4f4f4;text-align: center;}
+#about-photos div {width: 100%; height: 50vh;}
+#about-photo-1 {background: url('img/about-photo-1.jpg') top/cover;}
+#about-photo-2 {background: url('img/about-photo-2.jpg') top/cover;}
+#about-photo-3 {background: url('img/about-photo-3.jpg') top/cover;}
+#about-photo-4 {background: url('img/about-photo-4.jpg') top/cover;}
+#about-photo-5 {background: url('img/about-photo-5.jpg') top/cover;}
+#about-photo-6 {background: url('img/about-photo-6.jpg') top/cover;}
+
+/* Success stories */
+
+#success-section {width: 100%; color: #222; position: relative; font-family: 'Montserrat'; background: #f7f7f7;}
+#success-section .container {padding: 100px 10px;}
+#success-section .container hr  {display: none; border: none; height: 2px; width: 250px; background: #333; float: left; margin:20px 40px;}
+#success-section .container h2 {text-align: left; font-size: 1.6em; font-weight: bold; margin-bottom: 10px;}
+#success-section .container h3 {text-align: left; margin: 10px 0; font-size: 1.3em;}
+#success-section .container h4 {text-align: left;}
+#success-section .container p {text-align: left; font-size: .8em; color: #555; line-height: 20px;}
+#success-section .redbar {width: 80%; margin: 10px 0; height: 2px;}
+#success-stories>div {width: 90%; height: 80vh; display: inline-block; margin: 50px 10px;}
+#before-after-1 {width: 100%; height: 100%; background: url('img/beforeafter1.jpg') top/cover;}
+#before-after-2 {width: 100%; height: 100%; background: url('img/beforeafter2.jpg') top/cover;}
+#before-after-3 {width: 100%; height: 100%; background: url('img/beforeafter3.jpg') top/cover;}
+
+#story-text, #story-1-img {display: inline-block; margin: 20px;}
+#story-text {width: 80%;}
+#story-text h4 {font-size: 1.8em; margin: 0 0 50px 0;}
+#story-text h5 {font-size: 1.5em; margin: 0 0 80px 0;}
+#story-text h6 {font-size: 1.2em; margin: 10px 0;}
+#story-text div {margin: 50px 0;}
+#story-1-img {width: 200px; height: 140vh; background: url('img/suc-details.png') center/cover;}
+
+.success-a {width: 100%; display: block; margin: 10px 0; padding: 20px; text-align: center; font-size: .7em; background: #f13b3e; color: #fff;}
+.success-a i {margin: 0 0 0 10px;}
+
+/* Shop */
+
+#good-1 {width: 300px; height: 400px; background: url('img/good-1.jpg') center/cover;}
+#good-1:hover {background: url('img/good-1-rev.jpg') center/cover;}
+
+
+/* Contact Us */
+
+
+#contact-section {width: 100%; position: relative; background: #fff;}
+#contact-section .container {padding: 80px 10px;}
+.contact-div {padding: 10px; color: #333;}
+.contact-div input, .contact-div textarea {outline: none; margin: 5px; border: none; border-radius: 30px; background: #eee; padding: 10px 20px; font-size: .8em; color: #444}
+.contact-div input {width: 90%;}
+.contact-div textarea {width: 100%;}
+.contact-div button {font:bold .8em 'Open Sans'; box-shadow: 0 0 10px #f13b3e; letter-spacing: 1px; width: 50%;}
+.contact-div hr {width: 200px; height: 3px; background: #333; margin: 20px 0 30px 0; border: none;}
+.contact-div p {color: #555; line-height: 25px; font-size: 1em; margin: 30px 0; font-family: 'Open Sans';}
+.contact-div p span {display: block;}
+.contact-div h3 {font:bolder 1.5em 'Montserrat';}
+.contact-div h4 {font: 1.2em 'Open Sans'}
+
+
+
+@media only screen and (min-width: 768px) {
+    .container {max-width: 1180px; margin: auto; position: relative;}
+    #header2 div {justify-content: space-between;}
+    #header3 h1 {font-size: 3.2em;}
+    #sc2a img {display: inline-block;}
+    #sc2b img {display: inline-block; right: 0;}
+    #sc2b p, #converter {width: 60%;}
+    #sc2a-2 {font-size: 5em;}
+    #sc2a-3, #sc2b-1, #sc2b-1-2, #sc2a-1 {font-size: 2.5em;}
+    #sc2b-3 {font-size: 1.5em;}
+    #section3, #section4 {padding: 50px;}
+    #section4-container>div {display: inline-block; width: 300px;}
+    #darkmask {padding: 80px;}
+    #section5 .container>div {width: 350px; height: 300px;}
+    #section7 input {width: 500px;}
+    footer .container { display: flex; justify-content: space-around;}
+    footer .container div {width: 40%;}
+    .navigation i {margin: 0 20px;}
+    .navigation p {margin: 0 50px;}
+    #about-fitnesstrainer h1 {font-size: 2em;}
+    #about-facts #about-facts-2, #about-facts #about-facts-3 {float: left; height: 80vh; width: 50%;}
+    #about-facts #about-facts-2 h2 {font-size: 2.5em;}
+    #about-facts #about-facts-2 h4 {font-size: 2em;}
+    #about-facts {width: 85%;}
+    #about-photos div {width: 200px; height: 200px; display: inline-block;}
+    #about-photos-section {padding: 30px;}
+    #success-stories>div {width: 70%; height: 50vh;}
+    #success-stories {padding: 50px; text-align: center;}
+
+
+    #story-text {width: 40%;}
+    #story-text h4 {font-size: 2em;}
+    #story-text h5 {font-size: 1.6em;}
+    #story-text h6 {font-size: 1.4em;}
+    #story-1-img {width: 190px; height: 130vh;}
+
+
+    #contact-section .container {display: flex; justify-content: space-around;}
+    #contact-section .container>div {width: 40%;}
+    .contact-div h3 {font-size: 2em;}
+    .contact-div h4 {font-size: 1.5em;}
+    .contact-div input, .contact-div textarea {margin: 10px;padding: 20px 30px; font-size: 1.1em;}
+    .contact-div button {font-size: 1em; width: 50%;}
+    #section6 .container {display: flex; justify-content: space-around;}
+    #section6 .container #man-shop, #section6 .container #woman-shop {width: 40%;}
+}
+@media only screen and (min-width: 992px) {
+    #header2 img {display: block;}
+    #sc2 {display: flex; justify-content: center;}
+    #sc2 div {width: 40%;}
+    #sc2b img {left: 0;}
+    #sc2b p {display: inline-block; position: absolute; right: 50px;}
+    #serv {display: flex;} 
+    #section1 {height: 90vh; padding: 30vh 0 0 0;}
+    #section7 #lightmask .container {display: flex; align-items: flex-start; justify-content: center; }
+    #about-fitnesstrainer h1 {font-size: 2.5em;}
+    .success-a {font-size: 1em;}
+    #success-section .container hr  {display: block;}
+    #story-text, #story-1-img {margin: 30px 10%;}
+
+    #story-text h4 {font-size: 2.2em;}
+    #story-text h5 {font-size: 1.8em;}
+    #story-text h6 {font-size: 1.5em;}
+
+
+    .contact-div p {font-size: 1.1em;}
+}
+@media only screen and (min-width: 1068px) {
+    #success-section .container h2 {font-size: 2em; width: 70%;}
+    #success-section .container #success-text { width: 60%; float: left;}
+    #success-stories>div {width: 30%; height: 300px;}
+    .contact-div input {width: 70%;}
+}
+@media only screen and (min-width: 1180px) {
+    #section3-container {display: flex; justify-content:space-around;}
+    #section3-container>div, #section3-container>div>div {width: 250px; height: 55vh;}
+    #section3 {height: 100vh;}
+    #lightmask-about {padding: 0 0 50px 0;}
+}
